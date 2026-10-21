@@ -17,9 +17,9 @@ const corsOrigins = (process.env.CORS_ORIGINS || `${siteUrl},https://store.everg
   .filter(Boolean);
 
 const products = {
-  gems_100: { name: '100 Gems', gems: 100, priceUsd: 1.99 },
-  gems_500: { name: '500 Gems', gems: 500, priceUsd: 6.99 },
-  gems_1000: { name: '1000 Gems', gems: 1000, priceUsd: 11.99 },
+  gems_1000: { name: '1000 Gems', gems: 1000, priceUsd: 1.99 },
+  gems_5000: { name: '5000 Gems', gems: 5000, priceUsd: 5.99 },
+  gems_10000: { name: '10000 Gems', gems: 10000, priceUsd: 9.99 },
 };
 
 app.use(cors({ origin: corsOrigins }));
